@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap");
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  list-style: none;
+  text-decoration: none;
+  color: white; }
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
+
+body {
+  background-image: linear-gradient(109.6deg, #2163ff 11.2%, #000a8b 100.2%);
+  background-repeat: no-repeat;
+  font-family: "Lato", sans-serif; }
+
+.full-height {
+  height: 100vh; }
+
+#nav {
+  position: fixed;
+  top: 0;
+  right: 0; }
+  #nav ul {
+    display: flex;
+    padding: 2rem 0;
+    margin-right: 5rem; }
+    #nav ul li {
+      margin: 0 2rem;
+      font-size: 1.2rem;
+      position: relative; }
+      #nav ul li:before {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        height: 2px;
+        width: 0%;
+        border-radius: 5px;
+        background-color: white;
+        backface-visibility: hidden;
+        transition: width 0.3s cubic-bezier(0.83, 0, 0.17, 1); }
+      #nav ul li:hover::before {
+        width: 100%; }
+
+#main-heading {
+  padding-top: 20vh;
+  text-align: center;
+  margin: 0 auto; }
+
+#cta-button {
+  display: block;
+  margin: 7rem auto;
+  transition: all 0.2s ease;
+  backface-visibility: hidden; }
+  #cta-button:hover .arrow {
+    transform: translateX(4px); }
+
+.projects__slider {
+  margin-top: 4rem; }
+
+.projects__card {
+  border: 1px solid white;
+  border-radius: 3px;
+  height: 30vh; }
+
+.heading-1 {
+  font-size: 5rem;
+  margin-bottom: 0.5rem; }
+
+.heading-2 {
+  font-weight: 300; }
+
+.btn {
+  padding: 1rem 2rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: white;
+  border: 3px solid white;
+  cursor: pointer; }
+  .btn .arrow {
+    display: inline-block;
+    margin-left: 1rem;
+    transition: transform 0.2s ease; }
+
+.swiper-container {
+  width: 60%;
+  height: 40vh;
+  margin-top: 3rem; }
